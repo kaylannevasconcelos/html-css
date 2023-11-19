@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        background-color: gray;
+        margin: 0px;
+    }
+    header{
+        background-color: white;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    nav{
+        background-color: blue;
+        padding: 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 105px;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+        color: yellow;
+    }
+    main{
+        background-color: white;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    article{
+        background-color: lightgray;
+        padding: 5px;
+    }
+    article > aside{
+        background-color: rgb(135, 132, 132);
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+        box-shadow: 1px 1px 5px black;
+    }
+    footer > p{
+        margin: 0px;
+    }
+</style>
+<body>
+    <header>
+        <H1>MEU SITE</H1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Ciencia / Tecnologia / Esportes / Política
+        </section>
+        <section id="noticias">
+            <article>
+            <h2>BRASIL</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quae laudantium temporibus! Autem repudiandae ullam quasi, corporis odio praesentium velit quos vero similique, ratione sed vel nobis rerum alias provident?</p>
+            <aside>
+                <p>*nome do escritor</p>
+            </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo.</p>
+    </footer>
+</body>
+</html>
