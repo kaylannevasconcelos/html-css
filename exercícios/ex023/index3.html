@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .pink{
+            background-color: palevioletred;
+        }
+        .ciano{
+            background-color: cyan;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .verde{
+            background-color: yellowgreen;
+        }
+        .laranja{
+            background-color: orangered;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="amarelo">A</td>
+            <td colspan="2" class="ciano">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="pink">D</td>
+            <td class="verde">E</td>
+            <td rowspan="2" class="amarelo">F</td>
+        </tr>
+        <tr>
+            <td class="laranja">H</td>
+        </tr>
+        <tr>
+            <td class="ciano">K</td>
+            <td class="pink">L</td>
+        </tr>
+    </table>
+</body>
+</html>
