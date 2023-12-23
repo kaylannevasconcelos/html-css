@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto exemplo.</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="inome" maxlength="25" required>
+            </p>
+            <p>
+                <label for="iemail">e-mail</label>
+                <input type="email" name="tel" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxx-xxxx" required>
+            </p>
+            <!-- estudar sobre RegEx -->
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
