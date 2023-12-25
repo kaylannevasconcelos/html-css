@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <!-- SE FIZEREM PARTE DO MESMO GRUPO, todos os "radios" devem ter o nome igual. -->
+            <legend>Sexo</legend>
+            <label for="sxmas"><input type="radio" name="sx" id="sxmas"> masculino </label>
+            <br>
+            <label for="sxfem"><input type="radio" name="sx" id="sxfem" checked> feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="ibas"><input type="checkbox" name="bas" id="ibas"> basquete</label>
+            <br>
+            <label for="ivolei"><input type="checkbox" name="volei" id="ivolei"> vôlei</label>
+            <br>
+            <label for="ifut"><input type="checkbox" name="fut" id="ifut"> futebol</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
