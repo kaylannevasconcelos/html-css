@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 6</title>
+</head>
+<body>
+    <!-- para o envio de arquivos tem que usar o método POST -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor"> Cor: </label>
+            <input type="color" name="cor" id="icor" value="#f03045">
+        </p>
+        <p>
+            <label for="inivel">Nível de satisfação (1 ao 100)<label>
+                <input type="range" name="nivel" id="inivel" value="5">
+        </p>
+        <p>
+            <label for="iteste">Teste (1 ao 5)</label>
+            <input type="range" name="teste" id="iteste" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p><input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
