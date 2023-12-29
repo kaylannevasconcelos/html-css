@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*estilo para telas digitais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: lightgray;
+}
+header > h1{
+    text-align: center;
+}
+h1{
+    padding: 20px;
+}
+menu li{
+    background-color: rgb(78, 78, 78);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    list-style-type: none;
+    border-radius: 10px;
+}
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    padding-top: 20px;
+}
