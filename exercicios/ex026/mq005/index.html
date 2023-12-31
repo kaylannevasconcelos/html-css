@@ -6,13 +6,14 @@
     <title>mq 005</title>
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Icons:menu:&icon.query=menu&icon.platform=web">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>MEDIA QUERY</h1>
         <span class="material-icons" onclick="clickMenu()"><svg id="burguer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-          </svg></span>
+        </svg></span>
         
         <menu id="itens">
             <ul>
@@ -35,6 +36,14 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 769) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
           if ( itens.style.display == 'block') {
             itens.style.display = 'none'

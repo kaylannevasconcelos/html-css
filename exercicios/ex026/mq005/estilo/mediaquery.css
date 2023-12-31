@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*TYPICAL DEVICE BREAKPOINTS
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
+
+@media screen and (min-width: 769px) {
+    #burguer{
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+    main {
+        width: 769px;
+    }
+}
