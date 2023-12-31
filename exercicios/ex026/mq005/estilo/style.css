@@ -26,7 +26,6 @@ header > h1 {
 #burguer:hover{
     background-color: white;
     color: black;
-
 }
 menu{
     display: none;
